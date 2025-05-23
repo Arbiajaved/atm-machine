@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATM Withdrawal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atm-screen">
+    <h1>ATM Machine</h1>
+
+    <div id="welcome-screen">
+      <h2>Welcome to Virtual ATM</h2>
+      <button onclick="startATM()">Insert Card</button>
+    </div>
+
+    <div id="withdraw-screen" class="hidden">
+      <h2>Withdraw Cash</h2>
+
+      <label for="accountType">Select Account Type:</label>
+      <select id="accountType">
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+      </select>
+
+      <label for="amount">Enter Amount (₹):</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+
+      <button onclick="processWithdrawal()">Withdraw</button>
+      <button onclick="cancelTransaction()">Cancel</button>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <h2>Transaction Successful</h2>
+      <p id="resultMessage"></p>
+      <button onclick="finishTransaction()">Eject Card</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
