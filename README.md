@@ -43,3 +43,7 @@ Add encryption & security features to protect user data.
 
 🤝 Contributing
 Just to let you know, pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Author:
+Arbia
+B.Tech Student.
